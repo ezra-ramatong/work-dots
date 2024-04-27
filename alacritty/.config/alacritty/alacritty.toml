@@ -1,0 +1,29 @@
+import = ["/home/work/.config/alacritty/catppuccin-mocha.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding = {x = 20, y = 10}
+dynamic_padding = true
+opacity = 0.8
+
+[font]
+normal = { family = "BlexMono Nerd Font", style = "Regular" }
+bold = { family = "BlexMono Nerd Font", style = "Bold" }
+italic = { family = "BlexMono Nerd Font", style = "Italic" }
+bold_italic = { family = "BlexMono Nerd Font", style = "Bold Italic" }
+size = 14.0
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+
+[[hints.enabled]]
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+command = { program = "xdg-open" }
+mouse = { enabled = true }
+binding = { key = "U", mods = "Control|Shift" }
