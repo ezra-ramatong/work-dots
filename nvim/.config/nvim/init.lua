@@ -107,6 +107,9 @@ map("n", "<leader>gc", "<cmd>Telescope git_commits<cr>", { desc = "Git commits" 
 map("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { desc = "Git status" })
 map("n", "<leader>gf", "<cmd>G<cr>", { desc = "Git fugitive" })
 
+-- Netrw
+map("n", "<leader>e", "<cmd>Ex<cr>", { desc = "Open Netrw" })
+
 -- ----------------
 -- | Autocommands |
 -- ----------------
