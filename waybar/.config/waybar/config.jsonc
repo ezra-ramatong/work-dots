@@ -29,11 +29,11 @@
          "format": "{icon}",
          "format-icons": {
              "1": "Browser",
-             "2": "Terminal",
+             "2": "Tasks",
              "3": "Neovim",
              "4": "Docs",
              "5": "Comms",
-             "6": "Misc",
+             "6": "Books",
              "7": "Media",
              "urgent": "",
              "focused": "",
