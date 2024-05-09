@@ -547,6 +547,7 @@ require("lazy").setup({
 				javascript = { { "prettierd", "prettier" } },
 				lua = { "stylua" },
 				markdown = { "prettierd" },
+				cpp = { "clang-format" },
 			},
 		},
 	},
