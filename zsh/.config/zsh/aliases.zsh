@@ -9,6 +9,9 @@ alias vim='nvim'
 # Config Files
 alias zshrc='cd ~/.config/zsh/ && vim .zshrc'
 alias szsh='exec zsh'
+alias nvimc='cd ~/.config/nvim/ && vim init.lua'
+alias waybarc='cd ~/.config/waybar/ && vim config.jsonc'
+alias swayc='cd ~/.config/sway/ && vim config'
 
 # Network Manager
 alias wifi='nmtui'
@@ -16,6 +19,9 @@ alias wifi='nmtui'
 # fzf
 alias ff='cd ~ && ~/.local/bin/explorer.sh'
 alias sd='cd ~ && cd $(fd --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude go/pkg/ --exclude .cargo --exclude .rustup --exclude .nvm| fzf --height=70% --border=rounded )'
+
+# File explorer
+alias rn='ranger'
 
 # Package Managers
 
