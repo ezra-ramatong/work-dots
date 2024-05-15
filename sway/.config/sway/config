@@ -145,6 +145,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+i workspace prev
 bindsym $mod+o workspace next
 bindsym Alt+Tab workspace back_and_forth 
+workspace_auto_back_and_forth yes
 
 # Switch to workspace
 bindsym $mod+1 workspace number 1
@@ -177,17 +178,18 @@ set $monitor "HDMI-A-1"
 # Browser
 workspace 1 output $monitor 
 # Terminal
-workspace 2 output $laptop
+workspace 2 output $monitor
 # Neovim
 workspace 3 output $monitor
 # Docs
-workspace 4 output $laptop
+workspace 4 output $monitor
 # Comms
 workspace 5 output $monitor
 # Misc
-workspace 6 output $laptop
+workspace 6 output $monitor
 # Media
-workspace 7 output $laptop
+workspace 7 output $monitor
+
 # ----------
 # | Layout |
 # ----------
