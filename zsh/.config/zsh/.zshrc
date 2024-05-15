@@ -26,7 +26,7 @@ zstyle :compinstall filename '/home/work/.config/zsh/.zcompdump'
 # Options
 autoload -Uz colors && colors
 setopt PROMPT_SUBST
-PROMPT='%B%F{yellow}Work%f%b '
+PROMPT='%B%F{yellow}WORK%f%b '
 RPROMPT='%F{green}%~%f %F{red} ${vcs_info_msg_0_}%f'
 HISTFILE=~/.config/zsh/.histfile
 HISTSIZE=100000
