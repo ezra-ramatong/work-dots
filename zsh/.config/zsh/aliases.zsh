@@ -8,6 +8,7 @@ alias vim='nvim'
 
 # Config Files
 alias zshrc='cd ~/.config/zsh/ && vim .zshrc'
+alias aliases='cd ~/.config/zsh && vim aliases.zsh'
 alias szsh='exec zsh'
 alias nvimc='cd ~/.config/nvim/ && vim init.lua'
 alias waybarc='cd ~/.config/waybar/ && vim config.jsonc'
@@ -51,3 +52,8 @@ alias gpo='git push origin'
 alias gposu='git push origin --set-upstream'
 alias grmr='git rm -r'
 alias gs='git status'
+
+# Custom
+
+# Umuzi
+alias up='cd ~/dev/umuzi/projects && rn'
