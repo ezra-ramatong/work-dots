@@ -177,8 +177,8 @@ set $monitor "HDMI-A-1"
 
 # Browser
 workspace 1 output $monitor 
-# Terminal
-workspace 2 output $monitor
+# Tasks
+workspace 2 output $laptop
 # Neovim
 workspace 3 output $monitor
 # Docs
