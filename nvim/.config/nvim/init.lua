@@ -62,7 +62,7 @@ g.netrw_menu = 0
 g.netrw_winsize = 30
 
 -- ------------
--- | Mappings |
+-- | Keymaps |
 -- ------------
 map("", "<Space>", "<Nop>", { silent = true })
 vim.g.mapleader = " "
@@ -83,10 +83,10 @@ map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move line down (visual)" })
 map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move line up (visual)" })
 
 -- Window navigation
-map("n", "<C-h>", "<C-w>h", { silent = true, desc = "Left window navigation" })
+--[[ map("n", "<C-h>", "<C-w>h", { silent = true, desc = "Left window navigation" })
 map("n", "<C-j>", "<C-w>j", { silent = true, desc = "Down window navigation" })
 map("n", "<c-l>", "<c-w>l", { silent = true, desc = "Right window navigation" })
-map("n", "<C-k>", "<C-w>k", { silent = true, desc = "Up window navigation" })
+map("n", "<C-k>", "<C-w>k", { silent = true, desc = "Up window navigation" }) ]]
 
 -- Telescope
 map("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find for word under cursor" })
@@ -204,6 +204,7 @@ require("lazy").setup({
 				},
 			})
 			require("telescope").load_extension("fzf")
+			require("telescope").load_extension("harpoon")
 		end,
 	},
 
@@ -614,5 +615,42 @@ require("lazy").setup({
 				close_on_exit = true,
 			})
 		end,
+	},
+
+	-- Harpoon
+	{
+		"ThePrimeagen/harpoon",
+		event = { "VeryLazy" },
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+		config = function()
+			local mark = require("harpoon.mark")
+			local ui = require("harpoon.ui")
+
+			vim.keymap.set("n", "<leader>a", mark.add_file)
+			vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
+
+			vim.keymap.set("n", "<C-j>", function()
+				ui.nav_file(1)
+			end)
+			vim.keymap.set("n", "<C-k>", function()
+				ui.nav_file(2)
+			end)
+			vim.keymap.set("n", "<C-l>", function()
+				ui.nav_file(3)
+			end)
+			vim.keymap.set("n", "<C-;>", function()
+				ui.nav_file(4)
+			end)
+		end,
+	},
+
+	-- Undotree
+	{
+		"mbbill/undotree",
+		keys = {
+			{ "<leader>u", vim.cmd.UndotreeToggle, desc = "Undotree toggle" },
+		},
 	},
 }, { defaults = { lazy = true } })

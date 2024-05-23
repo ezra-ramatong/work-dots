@@ -54,6 +54,8 @@ alias grmr='git rm -r'
 alias gs='git status'
 
 # Custom
+alias e='exit'
 
 # Umuzi
-alias up='cd ~/dev/umuzi/projects && rn'
+alias up='cd ~/dev/umuzi/projects'
+alias su='cd ~/dev/umuzi/stand-up/ && vim .'
