@@ -11,7 +11,7 @@ o.autoindent = true
 o.breakindent = true
 o.cindent = true
 o.clipboard = "unnamedplus"
-o.colorcolumn = "120"
+o.colorcolumn = "80"
 o.completeopt = "menuone,noselect"
 o.expandtab = true
 opt.fillchars = { eob = " " }

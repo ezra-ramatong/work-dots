@@ -2,7 +2,7 @@
     "layer": "top", 
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30, 
-    "width": 1890, // Waybar width
+    "width": 1440, // Waybar width
     "spacing": 10, // Gaps between modules (4px)
     "margin-top": 10,
     "modules-left": [

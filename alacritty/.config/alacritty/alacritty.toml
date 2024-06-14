@@ -13,7 +13,7 @@ normal = { family = "BlexMono Nerd Font", style = "Regular" }
 bold = { family = "BlexMono Nerd Font", style = "Bold" }
 italic = { family = "BlexMono Nerd Font", style = "Italic" }
 bold_italic = { family = "BlexMono Nerd Font", style = "Bold Italic" }
-size = 14.0
+size = 12.0
 
 [selection]
 save_to_clipboard = true

@@ -27,9 +27,8 @@ set $right l
 # | Monitor Config |
 # ------------------
 
-output eDP-1 scale 1
-output HDMI-A-! resolution 1920x1080 position 1920,0
-
+output eDP-1 scale 1.3
+output HDMI-A-1 scale 1.3 resolution 1920x1080 
 # --------------
 # | Appearance |
 # --------------
@@ -178,7 +177,7 @@ set $monitor "HDMI-A-1"
 # Browser
 workspace 1 output $monitor 
 # Tasks
-workspace 2 output $laptop
+workspace 2 output $monitor
 # Neovim
 workspace 3 output $monitor
 # Docs
