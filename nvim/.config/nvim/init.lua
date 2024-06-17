@@ -211,6 +211,9 @@ require("lazy").setup({
 	-- Treesitter
 	{
 		"nvim-treesitter/nvim-treesitter",
+		dependencies = {
+			"windwp/nvim-ts-autotag",
+		},
 		event = { "BufRead", "BufNewFile" },
 		build = function()
 			require("nvim-treesitter.install").update({ with_sync = true })()
@@ -229,8 +232,12 @@ require("lazy").setup({
 				incremental_selection = { enable = true },
 				indent = { enable = true, disable = { "html", "css" } },
 			})
+			require("nvim-ts-autotag").setup({})
 		end,
 	},
+
+	-- Close tag
+	-- { "alvan/vim-closetag", event = "BufRead" },
 
 	-- Auto-pairs
 	{
