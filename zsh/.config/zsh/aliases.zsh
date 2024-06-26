@@ -5,6 +5,7 @@ alias md='mkdir'
 alias rb='reboot'
 alias sn='shutdown now'
 alias vim='nvim'
+alias dev='cd ~/dev'
 
 # Config Files
 alias zshrc='cd ~/.config/zsh/ && vim .zshrc'

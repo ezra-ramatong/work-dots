@@ -237,7 +237,7 @@ require("lazy").setup({
 	},
 
 	-- Close tag
-	-- { "alvan/vim-closetag", event = "BufRead" },
+	{ "alvan/vim-closetag", event = "BufRead" },
 
 	-- Auto-pairs
 	{
@@ -285,6 +285,7 @@ require("lazy").setup({
 				},
 
 				html = {},
+				cssls = {},
 				emmet_ls = {},
 				tsserver = {},
 				gopls = {},

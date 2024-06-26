@@ -1,0 +1,7 @@
+let mapleader = " "
+set timeoutlen 500
+
+nmap <leader>w :w<CR>
+map jk <ESC>
+
+

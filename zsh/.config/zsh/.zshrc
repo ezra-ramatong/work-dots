@@ -4,6 +4,13 @@ compinit
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
+# Some Magic?
+autoload -Uz bracketed-paste-magic
+zle -N bracketed-paste bracketed-paste-magic
+
+autoload -Uz url-quote-magic
+zle -N self-insert url-quote-magic
+
 # VCS
 zstyle ':vcs_info:git:*' formats '%b '
 # Enable checking for (un)staged changes, enabling use of %u and %c
@@ -26,7 +33,7 @@ zstyle :compinstall filename '/home/work/.config/zsh/.zcompdump'
 # Options
 autoload -Uz colors && colors
 setopt PROMPT_SUBST
-PROMPT='%B%F{yellow}  Grand Terminal  %f%b '
+PROMPT='%B%F{yellow}  Grand Term  %f%b '
 RPROMPT='%F{green}%~%f %F{red} ${vcs_info_msg_0_}%f'
 HISTFILE=~/.config/zsh/.histfile
 HISTSIZE=100000
